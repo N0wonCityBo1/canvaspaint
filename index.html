@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" >
+    <title>paintJS</title>
+    </head>
+    <body>
+        <canvas id="jsCanvas" class="canvas"></canvas>
+        <div class="controls"> 
+            <div class="controls_range">
+                <input type="range"  
+                id="jsRange" 
+                min="0.1" 
+                max="5.0" 
+                value="2.5" 
+                step="0.1"
+                />
+            </div>
+            <div class="controls_btns">
+            <button id="jsMode">Fill</button><!--버튼 모드 변경-->
+            <button id="jsSave">Save</button><!--저장버튼-->
+            </div>
+            <div class="controls_colors" id="jsColors">
+                <div class="controls_color jsColor" style="background-color: #2c2c2c"></div><!--각 색상 지정-->
+                <div class="controls_color jsColor" style="background-color: white  "></div>
+                <div class="controls_color jsColor" style="background-color: #FF3B30"></div>
+                <div class="controls_color jsColor" style="background-color: #FF9500"></div>
+                <div class="controls_color jsColor" style="background-color: #FFCC00"></div>
+                <div class="controls_color jsColor" style="background-color: #4CD963"></div>
+                <div class="controls_color jsColor" style="background-color: #5AC8FA"></div>
+                <div class="controls_color jsColor" style="background-color: #0579FF"></div>
+                <div class="controls_color jsColor" style="background-color: #5856D6"></div>
+            </div>
+        </div>
+        <script src="app.js"></script><!--js불러오기-->
+    </body>
+</html>
